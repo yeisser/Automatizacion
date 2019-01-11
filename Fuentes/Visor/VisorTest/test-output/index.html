@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 17 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-VisorTestSuite">
+              <span class="suite-name border-failed">VisorTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-VisorTestSuite">
+                    <span>C:\Fuentes\Visor\VisorTest\src\test\java\pe\com\test\seleniumwd\util\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-VisorTestSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-VisorTestSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-VisorTestSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-VisorTestSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-VisorTestSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-VisorTestSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">24 methods, 17 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-VisorTestSuite" class="hide-methods failed suite-VisorTestSuite"> (hide)</a> <!-- hide-methods failed suite-VisorTestSuite -->
+                      <a href="#" panel-name="suite-VisorTestSuite" class="show-methods failed suite-VisorTestSuite"> (show)</a> <!-- show-methods failed suite-VisorTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-VisorTestSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria(admin, clave, Lacteos, Mensaje incorrecto)">actualizarCategoria(admin, clave, Lacteos, Mensaje incorrecto)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)">actualizarCategoria(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria(admin, clave, Menestras, Se guardó de manera correcta la Categoría)">actualizarCategoria(admin, clave, Menestras, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)">actualizarCategoria(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)">actualizarCategoria(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria_FlujoAlternativo(admin, clave, Lacteos, Mensaje incorrecto)">actualizarCategoria_FlujoAlternativo(admin, clave, Lacteos, Mensaje incorrecto)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria_FlujoAlternativo(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)">actualizarCategoria_FlujoAlternativo(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria_FlujoAlternativo(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)">actualizarCategoria_FlujoAlternativo(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria_FlujoAlternativo(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)">actualizarCategoria_FlujoAlternativo(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria_FlujoAlternativo(admin, clave, Menestras, Se guardó de manera correcta la Categoría)">actualizarCategoria_FlujoAlternativo(admin, clave, Menestras, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria_FlujoAlternativo2(admin, clave, Menestras, Se guardó de manera correcta la Categoría)">actualizarCategoria_FlujoAlternativo2(admin, clave, Menestras, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria_FlujoAlternativo2(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)">actualizarCategoria_FlujoAlternativo2(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria_FlujoAlternativo2(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)">actualizarCategoria_FlujoAlternativo2(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria_FlujoAlternativo2(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)">actualizarCategoria_FlujoAlternativo2(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria_FlujoAlternativo2(admin, clave, Lacteos, Mensaje incorrecto)">actualizarCategoria_FlujoAlternativo2(admin, clave, Lacteos, Mensaje incorrecto)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="insertarCategoria(admin, clave, Lacteos, Mensaje incorrecto)">insertarCategoria(admin, clave, Lacteos, Mensaje incorrecto)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="insertarCategoria(admin, clave, , Nombre: Error de validación: se necesita un valor.)">insertarCategoria(admin, clave, , Nombre: Error de validación: se necesita un valor.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-VisorTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-VisorTestSuite" class="hide-methods passed suite-VisorTestSuite"> (hide)</a> <!-- hide-methods passed suite-VisorTestSuite -->
+                      <a href="#" panel-name="suite-VisorTestSuite" class="show-methods passed suite-VisorTestSuite"> (show)</a> <!-- show-methods passed suite-VisorTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-VisorTestSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria(admin, clave, , Nombre: Error de validación: se necesita un valor.)">actualizarCategoria(admin, clave, , Nombre: Error de validación: se necesita un valor.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria_FlujoAlternativo(admin, clave, , Nombre: Error de validación: se necesita un valor.)">actualizarCategoria_FlujoAlternativo(admin, clave, , Nombre: Error de validación: se necesita un valor.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="actualizarCategoria_FlujoAlternativo2(admin, clave, , Nombre: Error de validación: se necesita un valor.)">actualizarCategoria_FlujoAlternativo2(admin, clave, , Nombre: Error de validación: se necesita un valor.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="insertarCategoria(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)">insertarCategoria(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="insertarCategoria(admin, clave, Menestras, Se guardó de manera correcta la Categoría)">insertarCategoria(admin, clave, Menestras, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="insertarCategoria(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)">insertarCategoria(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-VisorTestSuite" title="pe.com.test.seleniumwd.CategoriaWebDriverTest" hash-for-method="insertarCategoria(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)">insertarCategoria(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-VisorTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-VisorTestSuite" class="panel VisorTestSuite">
+          <div class="suite-VisorTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">pe.com.test.seleniumwd.CategoriaWebDriverTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria(admin, clave, Lacteos, Mensaje incorrecto)">
+                  </a> <!-- actualizarCategoria(admin, clave, Lacteos, Mensaje incorrecto) -->
+                  <span class="method-name">actualizarCategoria</span>
+                  <span class="parameters">(admin, clave, Lacteos, Mensaje incorrecto)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.actualizarCategoria(CategoriaWebDriverTest.java:86)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- actualizarCategoria(admin, clave, Caramelos, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">actualizarCategoria</span>
+                  <span class="parameters">(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.actualizarCategoria(CategoriaWebDriverTest.java:86)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria(admin, clave, Menestras, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- actualizarCategoria(admin, clave, Menestras, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">actualizarCategoria</span>
+                  <span class="parameters">(admin, clave, Menestras, Se guardó de manera correcta la Categoría)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.actualizarCategoria(CategoriaWebDriverTest.java:86)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- actualizarCategoria(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">actualizarCategoria</span>
+                  <span class="parameters">(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.actualizarCategoria(CategoriaWebDriverTest.java:86)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- actualizarCategoria(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">actualizarCategoria</span>
+                  <span class="parameters">(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.actualizarCategoria(CategoriaWebDriverTest.java:86)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria_FlujoAlternativo(admin, clave, Lacteos, Mensaje incorrecto)">
+                  </a> <!-- actualizarCategoria_FlujoAlternativo(admin, clave, Lacteos, Mensaje incorrecto) -->
+                  <span class="method-name">actualizarCategoria_FlujoAlternativo</span>
+                  <span class="parameters">(admin, clave, Lacteos, Mensaje incorrecto)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.actualizarCategoria_FlujoAlternativo(CategoriaWebDriverTest.java:104)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria_FlujoAlternativo(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- actualizarCategoria_FlujoAlternativo(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">actualizarCategoria_FlujoAlternativo</span>
+                  <span class="parameters">(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.actualizarCategoria_FlujoAlternativo(CategoriaWebDriverTest.java:104)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria_FlujoAlternativo(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- actualizarCategoria_FlujoAlternativo(admin, clave, Caramelos, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">actualizarCategoria_FlujoAlternativo</span>
+                  <span class="parameters">(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.actualizarCategoria_FlujoAlternativo(CategoriaWebDriverTest.java:104)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria_FlujoAlternativo(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- actualizarCategoria_FlujoAlternativo(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">actualizarCategoria_FlujoAlternativo</span>
+                  <span class="parameters">(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.actualizarCategoria_FlujoAlternativo(CategoriaWebDriverTest.java:104)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria_FlujoAlternativo(admin, clave, Menestras, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- actualizarCategoria_FlujoAlternativo(admin, clave, Menestras, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">actualizarCategoria_FlujoAlternativo</span>
+                  <span class="parameters">(admin, clave, Menestras, Se guardó de manera correcta la Categoría)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.actualizarCategoria_FlujoAlternativo(CategoriaWebDriverTest.java:104)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria_FlujoAlternativo2(admin, clave, Menestras, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- actualizarCategoria_FlujoAlternativo2(admin, clave, Menestras, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">actualizarCategoria_FlujoAlternativo2</span>
+                  <span class="parameters">(admin, clave, Menestras, Se guardó de manera correcta la Categoría)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.actualizarCategoria_FlujoAlternativo2(CategoriaWebDriverTest.java:123)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria_FlujoAlternativo2(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- actualizarCategoria_FlujoAlternativo2(admin, clave, Caramelos, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">actualizarCategoria_FlujoAlternativo2</span>
+                  <span class="parameters">(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.actualizarCategoria_FlujoAlternativo2(CategoriaWebDriverTest.java:123)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria_FlujoAlternativo2(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- actualizarCategoria_FlujoAlternativo2(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">actualizarCategoria_FlujoAlternativo2</span>
+                  <span class="parameters">(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.actualizarCategoria_FlujoAlternativo2(CategoriaWebDriverTest.java:123)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria_FlujoAlternativo2(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- actualizarCategoria_FlujoAlternativo2(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">actualizarCategoria_FlujoAlternativo2</span>
+                  <span class="parameters">(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.actualizarCategoria_FlujoAlternativo2(CategoriaWebDriverTest.java:123)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria_FlujoAlternativo2(admin, clave, Lacteos, Mensaje incorrecto)">
+                  </a> <!-- actualizarCategoria_FlujoAlternativo2(admin, clave, Lacteos, Mensaje incorrecto) -->
+                  <span class="method-name">actualizarCategoria_FlujoAlternativo2</span>
+                  <span class="parameters">(admin, clave, Lacteos, Mensaje incorrecto)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.actualizarCategoria_FlujoAlternativo2(CategoriaWebDriverTest.java:123)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertarCategoria(admin, clave, Lacteos, Mensaje incorrecto)">
+                  </a> <!-- insertarCategoria(admin, clave, Lacteos, Mensaje incorrecto) -->
+                  <span class="method-name">insertarCategoria</span>
+                  <span class="parameters">(admin, clave, Lacteos, Mensaje incorrecto)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.insertarCategoria(CategoriaWebDriverTest.java:66)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertarCategoria(admin, clave, , Nombre: Error de validación: se necesita un valor.)">
+                  </a> <!-- insertarCategoria(admin, clave, , Nombre: Error de validación: se necesita un valor.) -->
+                  <span class="method-name">insertarCategoria</span>
+                  <span class="parameters">(admin, clave, , Nombre: Error de validación: se necesita un valor.)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.CategoriaWebDriverTest.insertarCategoria(CategoriaWebDriverTest.java:66)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-VisorTestSuite-class-failed -->
+          <div class="suite-VisorTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">pe.com.test.seleniumwd.CategoriaWebDriverTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria(admin, clave, , Nombre: Error de validación: se necesita un valor.)">
+                  </a> <!-- actualizarCategoria(admin, clave, , Nombre: Error de validación: se necesita un valor.) -->
+                  <span class="method-name">actualizarCategoria</span>
+                  <span class="parameters">(admin, clave, , Nombre: Error de validación: se necesita un valor.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria_FlujoAlternativo(admin, clave, , Nombre: Error de validación: se necesita un valor.)">
+                  </a> <!-- actualizarCategoria_FlujoAlternativo(admin, clave, , Nombre: Error de validación: se necesita un valor.) -->
+                  <span class="method-name">actualizarCategoria_FlujoAlternativo</span>
+                  <span class="parameters">(admin, clave, , Nombre: Error de validación: se necesita un valor.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarCategoria_FlujoAlternativo2(admin, clave, , Nombre: Error de validación: se necesita un valor.)">
+                  </a> <!-- actualizarCategoria_FlujoAlternativo2(admin, clave, , Nombre: Error de validación: se necesita un valor.) -->
+                  <span class="method-name">actualizarCategoria_FlujoAlternativo2</span>
+                  <span class="parameters">(admin, clave, , Nombre: Error de validación: se necesita un valor.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertarCategoria(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- insertarCategoria(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">insertarCategoria</span>
+                  <span class="parameters">(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertarCategoria(admin, clave, Menestras, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- insertarCategoria(admin, clave, Menestras, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">insertarCategoria</span>
+                  <span class="parameters">(admin, clave, Menestras, Se guardó de manera correcta la Categoría)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertarCategoria(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- insertarCategoria(admin, clave, Caramelos, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">insertarCategoria</span>
+                  <span class="parameters">(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertarCategoria(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)">
+                  </a> <!-- insertarCategoria(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría) -->
+                  <span class="method-name">insertarCategoria</span>
+                  <span class="parameters">(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-VisorTestSuite-class-passed -->
+        </div> <!-- panel VisorTestSuite -->
+        <div panel-name="test-xml-VisorTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Fuentes\Visor\VisorTest\src\test\java\pe\com\test\seleniumwd\util\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;VisorTestSuite&quot;&gt;
+  &lt;test name=&quot;CategoriaWebDriverTest&quot;&gt;
+    &lt;parameter name=&quot;navegador&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;rutaArchivo&quot; value=&quot;C:\Data\DataCategoria.xls&quot;/&gt;
+    &lt;parameter name=&quot;remoto&quot; value=&quot;0&quot;/&gt;
+    &lt;parameter name=&quot;fuenteDatos&quot; value=&quot;BD&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;pe.com.test.seleniumwd.CategoriaWebDriverTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CategoriaWebDriverTest --&gt;
+&lt;/suite&gt; &lt;!-- VisorTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-VisorTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for VisorTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">CategoriaWebDriverTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-VisorTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for VisorTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-VisorTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for VisorTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_VisorTestSuite');
+function tableData_VisorTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(24);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'insertarCategoria')
+data.setCell(0, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(0, 3, 1164543459);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'insertarCategoria')
+data.setCell(1, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(1, 3, 33289);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'insertarCategoria')
+data.setCell(2, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(2, 3, 29953);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'insertarCategoria')
+data.setCell(3, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(3, 3, 24664);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'actualizarCategoria')
+data.setCell(4, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(4, 3, 24478);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'actualizarCategoria_FlujoAlternativo2')
+data.setCell(5, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(5, 3, 23665);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'actualizarCategoria_FlujoAlternativo2')
+data.setCell(6, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(6, 3, 23120);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'actualizarCategoria_FlujoAlternativo')
+data.setCell(7, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(7, 3, 23057);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'actualizarCategoria_FlujoAlternativo')
+data.setCell(8, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(8, 3, 22855);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'actualizarCategoria_FlujoAlternativo')
+data.setCell(9, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(9, 3, 22511);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'actualizarCategoria')
+data.setCell(10, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(10, 3, 22480);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'actualizarCategoria_FlujoAlternativo')
+data.setCell(11, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(11, 3, 22152);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'actualizarCategoria_FlujoAlternativo2')
+data.setCell(12, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(12, 3, 22136);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'actualizarCategoria')
+data.setCell(13, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(13, 3, 22100);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'actualizarCategoria')
+data.setCell(14, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(14, 3, 21437);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'actualizarCategoria_FlujoAlternativo2')
+data.setCell(15, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(15, 3, 21216);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'actualizarCategoria_FlujoAlternativo')
+data.setCell(16, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(16, 3, 21029);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'actualizarCategoria_FlujoAlternativo2')
+data.setCell(17, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(17, 3, 20936);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'actualizarCategoria_FlujoAlternativo')
+data.setCell(18, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(18, 3, 19796);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'actualizarCategoria')
+data.setCell(19, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(19, 3, 19594);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'actualizarCategoria')
+data.setCell(20, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(20, 3, 19313);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'actualizarCategoria_FlujoAlternativo2')
+data.setCell(21, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(21, 3, 19203);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'insertarCategoria')
+data.setCell(22, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(22, 3, 17597);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'insertarCategoria')
+data.setCell(23, 2, 'pe.com.test.seleniumwd.CategoriaWebDriverTest')
+data.setCell(23, 3, 15663);
+window.suiteTableData['VisorTestSuite']= { tableData: data, tableDiv: 'times-div-VisorTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 323 hours</span>
+              <div id="times-div-VisorTestSuite">
+              </div> <!-- times-div-VisorTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-VisorTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for VisorTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-VisorTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-VisorTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">pe.com.test.seleniumwd.CategoriaWebDriverTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">inicioClase(firefox, 0)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">actualizarCategoria(admin, clave, Lacteos, Mensaje incorrecto)</span>
+                <span class="method-start">13267 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">actualizarCategoria(admin, clave, Menestras, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">35445 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">actualizarCategoria(admin, clave, , Nombre: Error de validación: se necesita un valor.)</span>
+                <span class="method-start">54774 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">actualizarCategoria(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">74383 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">actualizarCategoria(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">95820 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">actualizarCategoria(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">118300 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">actualizarCategoria_FlujoAlternativo(admin, clave, Lacteos, Mensaje incorrecto)</span>
+                <span class="method-start">142841 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">actualizarCategoria_FlujoAlternativo(admin, clave, Menestras, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">164993 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">actualizarCategoria_FlujoAlternativo(admin, clave, , Nombre: Error de validación: se necesita un valor.)</span>
+                <span class="method-start">186022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">actualizarCategoria_FlujoAlternativo(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">205818 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">actualizarCategoria_FlujoAlternativo(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">228329 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">actualizarCategoria_FlujoAlternativo(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">251215 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">actualizarCategoria_FlujoAlternativo2(admin, clave, Lacteos, Mensaje incorrecto)</span>
+                <span class="method-start">274367 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">actualizarCategoria_FlujoAlternativo2(admin, clave, Menestras, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">296550 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">actualizarCategoria_FlujoAlternativo2(admin, clave, , Nombre: Error de validación: se necesita un valor.)</span>
+                <span class="method-start">320215 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">actualizarCategoria_FlujoAlternativo2(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">343335 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">actualizarCategoria_FlujoAlternativo2(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">364551 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">actualizarCategoria_FlujoAlternativo2(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">385487 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">insertarCategoria(admin, clave, Lacteos, Mensaje incorrecto)</span>
+                <span class="method-start">404740 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">insertarCategoria(admin, clave, Menestras, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">422337 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">insertarCategoria(admin, clave, , Nombre: Error de validación: se necesita un valor.)</span>
+                <span class="method-start">438000 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">insertarCategoria(admin, clave, Articulos de Limpieza, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">1164981522 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">insertarCategoria(admin, clave, Caramelos, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">1165014827 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">insertarCategoria(admin, clave, Gaseosas, Se guardó de manera correcta la Categoría)</span>
+                <span class="method-start">1165044780 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1165069490 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

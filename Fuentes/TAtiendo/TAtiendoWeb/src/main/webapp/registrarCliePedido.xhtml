@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets" template="templateCliente.xhtml">
+	<ui:define name="body">
+		<h:form prependId="false" id="frmIndex">
+			<h:inputHidden value="#{pedidoController.inicioMantenimiento}" />
+			<p:panel header="#{m['registrarCliPedido.cabecera']}">
+				
+				<h:panelGrid columns="4" id="panelPrincipal">
+
+					<h:outputLabel value="#{m['registrarCliPedido.producto']}:" />
+                    <p:selectOneMenu id="cboProducto" value="#{pedidoController.productoSeleccionado.idProducto}" style="width: 318px" >
+			            <f:selectItems value="#{pedidoController.listaItemProductos}" />
+			            <p:ajax listener="#{pedidoController.cambiarItem}" update="txtStock,txtPu,spCantidad" />
+			        </p:selectOneMenu>
+					<h:outputLabel value="#{m['registrarCliPedido.stock']}:" />
+					<p:inputText id="txtStock" label="#{m['registrarCliPedido.stock']}" value="#{pedidoController.productoSeleccionado.cantidad}" readonly="true" size="50"/>
+
+					<h:outputLabel value="#{m['registrarCliPedido.pu']}:" />
+					<p:inputText id="txtPu" label="#{m['registrarCliPedido.pu']}" value="#{pedidoController.productoSeleccionado.precio}" readonly="true" size="50"/>
+					<h:outputLabel value="#{m['registrarCliPedido.cantidad']}: *" />
+					<p:spinner id="spCantidad" label="#{m['registrarCliPedido.cantidad']}" value="#{pedidoController.detallePedido.cantidad}" min="0" max="#{pedidoController.productoSeleccionado.cantidad}" stepFactor="1" required="true" />
+					
+					<h:outputLabel value="" />
+					<h:panelGrid columns="2">
+						<p:commandButton value="+" action="#{pedidoController.agregar}"  update="tablaDetallePedidos, txtTotal" style="width: 50px"/>   
+						<p:commandButton value="-" action="#{pedidoController.quitar}"  update="tablaDetallePedidos, txtTotal" style="width: 50px"/>   
+					</h:panelGrid>
+				</h:panelGrid>
+				
+				<p:dataTable id="tablaDetallePedidos" var="i"
+					value="#{pedidoController.listaDetallePedidos}"
+					rowKey="#{i.idProducto}"
+					selection="#{pedidoController.detallePedidoSeleccionado}"
+					selectionMode="single" rows="50" paginator="true"
+					paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} "
+					emptyMessage="#{m['template.noRegistros']}"
+					rowsPerPageTemplate="5,10,15" >
+					<f:facet name="header">  
+                        #{m['registrarCliPedido.detalle']}
+                	</f:facet>
+                	<p:column headerText="#{m['registrarCliPedido.codigo']}">  
+                        #{i.idProducto}  
+                    </p:column>
+					<p:column headerText="#{m['registrarCliPedido.producto']}">  
+                        #{i.producto.nombre}  
+                    </p:column>
+                    <p:column headerText="#{m['registrarCliPedido.cantidad']}">  
+                        #{i.cantidad}  
+                    </p:column>
+                    <p:column headerText="#{m['registrarCliPedido.precio']}">  
+                        #{i.producto.precio}  
+                    </p:column>
+                    <p:column headerText="#{m['registrarCliPedido.subTotal']}">  
+	                    <h:outputText value="#{i.subTotal}">
+	    					<f:convertNumber pattern="###,###.00" />
+						</h:outputText>
+                    </p:column>
+                    
+                   
+				</p:dataTable>
+				
+				 <h:panelGrid columns="2">
+	                	<h:outputLabel value="#{m['registrarCliPedido.total']}:" />
+						<p:inputText id="txtTotal" label="#{m['registrarCliPedido.total']}"  value="#{pedidoController.pedido.total}" readonly="true" size="20">
+							<f:convertNumber maxFractionDigits="2" minFractionDigits="2" />
+						</p:inputText>    
+				</h:panelGrid>
+				
+				<h:panelGrid columns="1"> 
+                    	<p:commandButton value="#{m['template.guardar']}" action="#{pedidoController.guardar}" update="panelPrincipal, tablaDetallePedidos, txtTotal" style="width: 150px"/>    
+				</h:panelGrid>
+				
+				<p:messages id="messages" showDetail="false" autoUpdate="true"/>
+			</p:panel>
+		</h:form>
+	</ui:define>
+</ui:composition>
+

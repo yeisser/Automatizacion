@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	template="templateJefeAlmacen.xhtml">
+	<ui:define name="body">
+		<h:form prependId="false" id="frmIndex">
+			<p:panel header="#{m['actualizarAlmacenProducto.cabecera']}">
+				<h:panelGrid columns="2" id="panel02">
+					<h:outputLabel value="#{m['actualizarAlmacenProducto.nombre']}: *" />
+                    <p:inputText id="txtNombre" label="#{m['actualizarAlmacenProducto.nombre']}" value="#{productoController.productoGuardar.nombre}" required="true" size="50"/>
+                    
+                    <h:outputLabel value="#{m['actualizarAlmacenProducto.descripcion']}: *" />
+                    <p:inputTextarea id="txtDescripcion" label="#{m['actualizarAlmacenProducto.descripcion']}" value="#{productoController.productoGuardar.descripcion}" required="true" rows="6" cols="50" maxlength="45" />
+                    
+                    <h:outputLabel value="#{m['actualizarAlmacenProducto.categoria']}: *" />
+                    <p:selectOneMenu id="cboCategoria" value="#{productoController.productoGuardar.idCategoria}" style="width: 318px">
+			            <f:selectItems value="#{productoController.listaItemGrupos}" />
+			        </p:selectOneMenu>
+					
+					<h:outputLabel value="#{m['actualizarAlmacenProducto.esInterno']}: " />
+					<p:selectBooleanCheckbox id="chkEsInterno" value="#{productoController.productoGuardar.esInterno}" />
+                    
+                    <h:outputLabel value="#{m['actualizarAlmacenProducto.ubicacion']}: *" />
+                    <p:selectOneRadio id="rbtUbicacion" value="#{productoController.productoGuardar.ubicacionProducto}">
+			            <f:selectItem itemLabel="Local Central" itemValue="1"  />
+			            <f:selectItem itemLabel="Local Almacen" itemValue="2" />
+			            <f:selectItem itemLabel="Sucursales" itemValue="3" />
+			        </p:selectOneRadio>
+			        
+			        <h:outputLabel value="#{m['actualizarAlmacenProducto.cantidad']}: *" />
+			        <p:spinner id="spCantidad" label="#{m['actualizarAlmacenProducto.cantidad']}" value="#{productoController.productoGuardar.cantidad}" min="0" max="100000000000" stepFactor="1" required="true" />
+			        
+			        <h:outputLabel value="#{m['actualizarAlmacenProducto.precio']}: *" />
+			        <p:spinner id="spPrecio" label="#{m['actualizarAlmacenProducto.precio']}" value="#{productoController.productoGuardar.precio}" min="0" max="100000000000" stepFactor="0.5"  required="true"/>
+			        
+                    <h:outputLabel value="" /> 
+					<h:panelGrid columns="2"> 
+                    	<p:commandButton value="#{m['template.guardar']}" action="#{productoController.actualizar}" update="panel02" style="width: 150px"/>    
+                    	<p:commandButton value="#{m['template.volver']}" action="mntAlmacenStock" immediate="true"  style="width: 150px"/>
+                    </h:panelGrid>
+				</h:panelGrid>
+
+				<p:messages id="messages" showDetail="false" autoUpdate="true" />
+
+
+			</p:panel>
+		</h:form>
+	</ui:define>
+</ui:composition>
+
